@@ -32,7 +32,7 @@
     --accent-color: #FF8DCB;
     --title-color: #353430;
     --text-color: #353430;    
-    }
+  }
 
     .REC::before, .REC::after, .REC {
       display: none;

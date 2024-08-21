@@ -168,7 +168,7 @@
   margin-block-end: 10px;
 }
 
-.block__content__list-item-title{
+.block__content__list-item-title {
   color: var(--title-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -177,7 +177,7 @@
   margin-block-end: 10px;
 }
 
-.block__content__list-item-text{
+.block__content__list-item-text {
   color: var(--text-color);
   font-family: inherit;
   font-size: 18px;
@@ -357,7 +357,7 @@
     grid-template-rows: min-content 1fr;
   }
 
-  .block:nth-child(2) .block__content{
+  .block:nth-child(2) .block__content {
     display: flex;
     gap: 20px;
   } 
