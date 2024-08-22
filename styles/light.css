@@ -22,16 +22,14 @@
   --decorated-zone-color: #353430;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --headlines-color: #FFC2E6;
-    --accent-color: #FF8DCB;
-    --title-color: #353430;
-    --text-color: #353430;    
-  }
+/* @media (prefers-color-scheme: light) {
+    
+} */
 
-    .REC::before, .REC::after, .REC {
-      display: none;
-    }
+.page.theme_light .REC::after {
+  display: none;
 }
 
+.page.theme_light .REC::before {
+  display: none;
+}
