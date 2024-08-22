@@ -10,12 +10,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
+  background-color: #fff1f7;
   background-image: url(../images/cover-image-light.png);
-  background-position: center;
-  background-attachment: fixed;
-}
-
-:root .theme_light {
   --headlines-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --title-color: #353430;

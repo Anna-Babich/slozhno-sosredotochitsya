@@ -2,10 +2,10 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
+  background-color: #000028;
   background-image: url(../images/cover-image.png);
   background-position: center;
-  background-size: 100% 100vh;
+  background-size: cover;
   background-attachment: fixed; 
 }
 
