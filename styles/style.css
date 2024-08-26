@@ -1,5 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-.red { outline: 1px solid red; }
+/* .red { outline: 1px solid red; } */
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -7,7 +7,7 @@
   background-image: url(../images/cover-image.png);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 /* шапка */
@@ -86,7 +86,6 @@
 .header__theme-menu-button {
   background: none;
   color: var(--button-color);
-  border: none;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -219,7 +218,7 @@
 
 /* секция с картинками*/
 
-.block__picture.block{
+.block__picture.block {
   gap: 10px;
   margin-block-end: 40px;
 }
@@ -350,7 +349,7 @@
     display: grid;
     grid-template-columns: repeat(3,  minmax(min-content, max-content));
     grid-template-rows: repeat(3,  minmax(min-content, max-content));
-    gap: 21px; 
+    gap: 21px;
   }
 
   .block-picture-img {
@@ -358,13 +357,13 @@
   }
 
   .picture-1 {
-    width: clamp(479px, 100%, 649px);         
+    width: clamp(479px, 100%, 649px);
     grid-column: 1/ span 2;
     grid-row: 1/ 2;
   }
 
   .picture-2 {
-    width: clamp(229px, 100%, 315px);  
+    width: clamp(229px, 100%, 315px);
     min-height: 100%;
     object-fit: cover;
     object-position: center;
@@ -373,7 +372,7 @@
   }
 
   .picture-3 {
-    width: clamp(229px, 100%, 315px);  
+    width: clamp(229px, 100%, 315px);
     min-height: 100%;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
@@ -381,14 +380,14 @@
   }
 
   .picture-4 {
-    width: clamp(230px, 100%, 315px);  
+    width: clamp(230px, 100%, 315px);
     min-height: 100%;
     grid-column: 2/ span 1;
     grid-row: 2 / span 1;
   }
 
   .picture-5 {
-    width: clamp(479px, 100%, 649px);  
+    width: clamp(479px, 100%, 649px);
     min-height: 100%;
     grid-column: 2/ span 2;
     grid-row: 3 / 4;
@@ -463,7 +462,7 @@
     display: grid;
     grid-template-columns: 315px minmax(648px, 100%);
     grid-template-rows: 1fr;
-    margin-inline-start: 10px; 
+    margin-inline-start: 10px;
   }
 
   .block_what-focus {
