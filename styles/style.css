@@ -1,5 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-* { outline: 1px solid red; }
+/* * { outline: 1px solid red; } */
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -142,7 +142,7 @@
 
 .block {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(355px, 984px));
+  grid-template-columns: repeat(auto-fill, minmax(min-content, max-content));
   grid-template-rows: min-content 1fr;
   gap: 20px;
   justify-content: center;
@@ -218,7 +218,7 @@
 
 /* секция с картинками*/
 
-.block__picture.block {
+.block.block__picture {
   gap: 10px;
   margin-block-end: 40px;
 }
@@ -232,8 +232,8 @@
 }
 
 .block-picture-img {
-  /* width: clamp(355px, 100%, 768px); */
-  min-width: 355px;
+  width: clamp(355px, 100%, 768px);
+  /* min-width: 355px; */
   width: 100%;
   margin-block-end: 5px;
   object-fit: contain;
@@ -343,18 +343,15 @@
     margin-block-end: 60px;
   }
 
-  .block__picture-title {
-    min-width: 728px;
-    margin-block-end: 10px;
+  .block__picture {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
-  .block-picture {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-
-    /* grid-template-columns: repeat(3,  minmax(min-content, max-content));
-    grid-template-rows: repeat(3,  minmax(min-content, max-content)); */
-    gap: 21px;
+  .block__picture-title {
+    grid-column: 1/ span 3;
+    grid-row: 1/ 2;
   }
 
   .block-picture-img {
@@ -362,40 +359,33 @@
   }
 
   .picture-1 {
-    /* width: clamp(479px, 100%, 649px); */
     grid-column: 1/ span 2;
-    grid-row: 1/ 2;
+    grid-row: 2/ 3;
   }
 
   .picture-2 {
-    /* width: clamp(229px, 100%, 315px); */
     min-height: 100%;
     object-fit: cover;
     object-position: center;
-    grid-row: 1/ span 2;
+    grid-row: 2/ span 2;
     grid-column: 3 / span 1;
   }
 
   .picture-3 {
-    /* width: clamp(229px, 100%, 315px); */
     min-height: 100%;
     grid-column: 1 / 2;
-    grid-row: 2 / 4;
+    grid-row: 3 / 5;
     object-fit: cover;
   }
 
   .picture-4 {
-    /* width: clamp(230px, 100%, 315px); */
-    /* min-height: 100%; */
     grid-column: 2/ span 1;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
   }
 
   .picture-5 {
-    /* width: clamp(479px, 100%, 649px); */
-    /* min-height: 100%; */
     grid-column: 2/ span 2;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
   }
 
   .footer {
@@ -487,14 +477,14 @@
     justify-content: center;
   } 
 
-  .block__picture {
+  /* .block__picture {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
     gap: 20px;
-  }
+  } */
  
-  .block__picture-title {
+  /* .block__picture-title {
     padding-inline-start: 10px;
     min-width: 984px;
     width: 100%;
@@ -502,7 +492,7 @@
   
   .block-picture-img {
     min-width: 100%;
-  }
+  } */
 
   .footer {
     height: 100vh;
