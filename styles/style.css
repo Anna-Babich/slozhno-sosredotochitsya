@@ -1,5 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-/* * { outline: 1px solid red; } */
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -288,7 +287,7 @@
 
   .header__title.headlines {
     margin: 0;
-    margin-block-start: 105px;
+    align-self: center;
   }
 
   .header__description {
