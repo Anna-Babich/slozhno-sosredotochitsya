@@ -16,7 +16,7 @@
   min-height: 640px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content 1fr 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   position: relative;
   margin-block-end: 40px;
 }
@@ -41,6 +41,12 @@
   bottom: 10px;
   border-bottom: 1px solid var(--decorated-zone-color);
   border-left: 1px solid var(--decorated-zone-color);
+}
+
+.header__decoration {
+  position: absolute;
+  top: 0; 
+  right: 0;
 }
 
 .header__decoration::before {
@@ -68,7 +74,8 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-start: 73px;
+  align-self: center;
+  margin-block-start: 15px;
   margin-inline-end: 10px;
 }
 
@@ -114,16 +121,15 @@
   font-weight: 700;
   text-shadow: 4px 4px 0 var(--shadow-color);
   margin-inline-start: 10px;
-  padding-block-end: 55px;
-  line-height: 95.7px;
+  line-height: 0.825em;
 }
 
 .header__description {
   justify-self: end;
-  max-width: 364px;
-  margin-inline-start: 10px;
+  align-self: center;
+  max-width: 355px;
   margin-inline-end: 10px;
-  margin-block-end: 66px;
+  margin-block-end: 10px;
   background-color: var(--accent-color);
   color: var(--title-color);
   font-family: inherit;
@@ -280,21 +286,20 @@
   }
 
   .header__theme-menu {
-    align-content: end;
-    margin-block-end: 62px;
+    margin-block-start: 34px;
     margin-inline-end: 20px;
   }
 
   .header__title.headlines {
     margin: 0;
-    align-self: center;
   }
 
   .header__description {
+    margin: 0;
+    max-width: 364px;
     margin-inline-end: 20px;
-    margin-block-end: 183px;
-    line-height: 23.4px;
-  }
+    margin-block-end: 15px;
+}
 
   .block {
     padding-inline-start: 20px;
@@ -357,10 +362,6 @@
 
 @media (min-width: 1024px) {
 
-  .header {
-    grid-template-rows: min-content auto auto;
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -380,14 +381,11 @@
   
   .header__title.headlines {
     font-size: 157px;
-    align-self: end;
-    margin: 0;
   }
 
   .header__description {
-    align-self: center;
     min-width: 491px;
-    margin-block-end: 64px;
+    margin-block-end: 20px;
   }
 
   .block__why-and-how-focus {
